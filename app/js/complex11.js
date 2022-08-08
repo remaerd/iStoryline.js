@@ -886,15 +886,15 @@ function locationBox(locationSet, useMode) {
         .text(tipX + 28, tipY + 35, locationSet[i])
         .attr('pointer-events', 'none')
         .attr({ 'font-size': 20 })
+    })
 
-      rect[i].mouseup(() => {
-        console.log('REMOVE')
-        border.remove()
-        img.remove()
-        mask.remove()
-        text.remove()
-        event.preventDefault()
-      })
+    rect[i].mouseup(() => {
+      console.log('REMOVE')
+      border.remove()
+      img.remove()
+      mask.remove()
+      text.remove()
+      event.preventDefault()
     })
   }
 }
